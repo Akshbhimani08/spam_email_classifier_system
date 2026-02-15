@@ -11,6 +11,9 @@ import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 
 
+import nltk
+nltk.download("stopwords")
+nltk.download("punkt")
 
 with open("etc.pkl","rb") as f:
     model=pickle.load(f)
